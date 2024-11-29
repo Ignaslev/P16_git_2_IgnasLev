@@ -150,6 +150,9 @@ def main():
         if pasirinkimas == 'q':
             break
 
+def ieskoti_dab():
+    pass
+
 
 if __name__ == '__main__':
     main()
