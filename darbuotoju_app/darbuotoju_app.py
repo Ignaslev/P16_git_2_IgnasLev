@@ -126,7 +126,8 @@ def main():
         print('| 1. Ivesti nauja darbuotoja    |\n'
               '| 2. Redaguoti darbuotoja       |\n'
               '| 3. Ziureti darbuotojus        |\n'
-              '| 4. Atleisti darbuotoja        |\n'
+              '| 4. Ieskoti darbuotojo         |\n'
+              '| 5. Atleisti darbuotoja        |\n'
               '| q - iseiti                    |')
         print('_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _')
         print()
