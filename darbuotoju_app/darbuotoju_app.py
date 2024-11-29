@@ -1,4 +1,3 @@
-import os
 import pickle
 
 
@@ -22,6 +21,7 @@ def prideti_darb():
         testi = input('"Enter" prideti dar viena darbuotoja arba "q" iseiti: ')
         if testi == 'q':
             with open('darbuotojai.pickle', mode='wb') as file:
+                # noinspection PyTypeChecker
                 pickle.dump(darbuotojai, file)
             print("Darbuotojai išsaugoti.")
             print()
@@ -134,10 +134,10 @@ def main():
         pasirinkimas = input('Pasirinkimas: ')
 
         if pasirinkimas == '1':
-            darbuotojai = prideti_darb()
+            prideti_darb()
 
         if pasirinkimas == '2':
-            darbuotojai = keisti_darb()
+            keisti_darb()
 
         if pasirinkimas == '3':
             ziureti_darb()
@@ -146,7 +146,7 @@ def main():
                 continue
 
         if pasirinkimas == '4':
-            darbuotojai = atleisti()
+            atleisti()
 
         if pasirinkimas == 'q':
             break
